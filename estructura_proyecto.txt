@@ -1,0 +1,49 @@
+.
+├── README.md
+├── estructura_proyecto.txt
+├── package-lock.json
+├── package.json
+├── public
+│   ├── images
+│   │   ├── imgDere.jpg
+│   │   ├── imgDr.jpeg
+│   │   ├── imgMob.jpg
+│   │   ├── imgPrinci.png
+│   │   ├── imgpro1
+│   │   ├── imgpro2
+│   │   ├── logo.png
+│   │   ├── logoDistri.png
+│   │   ├── logoDistri3.png
+│   │   ├── logoHeader.png
+│   │   ├── logoSena.png
+│   │   ├── logoUN.png
+│   │   ├── logoUN2.png
+│   │   ├── logo_libre.png
+│   │   ├── proj1.png
+│   │   └── proj2.png
+│   ├── index.html
+│   ├── manifest.json
+│   ├── robots.txt
+│   └── videos
+│       ├── animacion.mp4
+│       └── codigo-binario.mov
+├── src
+│   ├── App.js
+│   ├── components
+│   │   ├── About.js
+│   │   ├── Contact.js
+│   │   ├── Foot.js
+│   │   ├── Header.js
+│   │   ├── Hero.js
+│   │   ├── InfiniteCarousel.js
+│   │   ├── LoadingScreen.js
+│   │   ├── PopupProyecto1.js
+│   │   ├── PopupProyecto2.js
+│   │   └── Projects.js
+│   ├── index.css
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+└── tailwind.config.js
+
+8 directories, 39 files

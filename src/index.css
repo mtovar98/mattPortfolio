@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Puedes añadir estilos globales personalizados aquí */
+
+
+
+@font-face {
+  font-family: 'tipoNormal'; /* Nombre real de la familia */
+  src: url('./assets/fonts/tipoNormal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Ayuda a que cargue más rápido */
+}
+
+@font-face {
+  font-family: 'tipoBold';
+  src: url('./assets/fonts/tipoBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html, body, #root{
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  margin: 0;
+  background-color: #161616;
+
+}
+
+
+.blinking-cursor {
+  display: inline-block;
+  width: 10px;
+  animation: blink 0.6s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* En tu archivo CSS */
+.text-align-last-center {
+  text-align-last: center;
+}
+
+/* Clases personalizadas para ocultar scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background: #e0ff59;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Ocultar en dispositivos táctiles */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
